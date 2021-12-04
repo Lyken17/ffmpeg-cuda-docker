@@ -12,6 +12,7 @@ Load from docker hub (ongoing).
 
 ## Run examples
 
+```
 docker run --rm -it --gpus all \
     -e NVIDIA_VISIBLE_DEVICES=all \
     -e NVIDIA_DRIVER_CAPABILITIES=compute,utility,video \
@@ -22,5 +23,4 @@ docker run --rm -it --gpus all \
         -i input.mp4 \
         -c:v hevc_nvenc \
         out.mp4 -y
-
-
+```
